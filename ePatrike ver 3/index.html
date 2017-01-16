@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-framework="marionettejs">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ePatrike</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+ 
+	</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+				<div class="navbar navbar-inverse navbar-static-top" id="myNavbar">
+			<div class="container" id="myNavContainer">
+
+				<div class="navbar-header" id="myButtonDiv">
+					<a class="navbar-brand" href="#">ePatrike</a>
+
+					<button class="btn-info navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<small>Menu</small>
+<!--
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+-->
+					</button>
+
+				</div>  <!-- myButtonDiv -->
+
+				<div class="collapse navbar-collapse navHeaderCollapse" id="our-nav-bar">                
+                	<div id="main-nav"></div>
+                </div>
+            </div> <!-- myNav Container -->
+            </div>
+            </div> <!-- header -->
+
+            <div id="notification"></div><!-- /#notification -->
+
+            <div id="main"></div> <!-- Main -->
+
+            <div class="footer" id="footer"></div> <!-- footer -->
+
+            <!-- To be used as modal and notifications-->
+            <div class="modal fade" id="dialog" tabindex="-1" role="dialog" aria-hidden="true">
+            </div><!-- /.modal -->
+
+        </div> <!-- /container -->
+
+
+
+
+        <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+    </body>
+
+</html>
+
